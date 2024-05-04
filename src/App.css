@@ -1,0 +1,158 @@
+.bg-image {
+  background-image: url(/src/assets/images/light.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+}
+.bg-salmon {
+  background-image: url("../src/assets/images/dark.jpg");
+  color: white !important;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  padding: 0 15px;
+}
+.darkMode {
+  fill: white;
+  width: 36px;
+  font-size: 29px;
+  position: absolute;
+  top: 11px;
+  right: 48px;
+  margin: 27px;
+}
+
+.navBar {
+  display: flex;
+  flex-direction: row;
+  align-self: center;
+  position: relative;
+  margin: 20px;
+}
+
+.input {
+  width: 452px;
+  height: 50px;
+  margin: 10px 3px 0 5px;
+  border: 2px solid white;
+  border-radius: 2px;
+  background-color: rgb(175, 167, 167);
+  color: white;
+  padding-left: 60px;
+}
+.input::placeholder {
+  color: white;
+}
+.temp {
+  font-size: 30px !important;
+}
+.icon {
+  width: 30px;
+  height: auto;
+  margin-top: 7px;
+  gap: 2rem;
+  color: white;
+}
+.icon3 {
+  width: 140px;
+  height: auto;
+  margin-top: 33px;
+  color: white;
+  transition: linear all 0.3s;
+}
+.icon3:hover {
+  transform: scale(1.1);
+}
+.degree_date {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+  font-size: 1.3rem;
+}
+.search {
+  width: 30px;
+  height: auto;
+
+  color: white;
+  position: absolute;
+  right: 15px;
+  top: 18px;
+}
+
+.location {
+  position: absolute;
+  top: 11px;
+  left: 14px;
+}
+.icon2 {
+  width: 170px;
+  height: auto;
+  color: white;
+}
+.firstContent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.secondContent {
+  margin-bottom: 47px;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-rows: 98px 89px;
+  grid-template-columns: 169px 169px;
+  /* margin-bottom: 23px; */
+  gap: 0.9rem;
+  justify-content: space-between;
+  padding: 10px;
+}
+.grid-item {
+  padding: 10px;
+  border: 2px solid white;
+  background-color: rgb(110, 110, 123);
+  color: white;
+  justify-items: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  transition: linear all 0.3s;
+}
+
+.grid-items {
+  display: flex;
+  flex-direction: row;
+  font-weight: 600;
+  font-size: larger;
+  gap: 0.03rem;
+}
+.grid-item:hover {
+  transform: scale(1.1);
+}
+
+@media (max-width: 768px) {
+  .input {
+    width: 100%;
+  }
+  .grid-container {
+    grid-template-columns: 100%;
+  }
+  .grid-item {
+    grid-column: 1;
+  }
+  .darkMode {
+    right: 0;
+    margin: 0;
+    top: 40px;
+  }
+  .navBar {
+    margin-left: -10px;
+  }
+}
