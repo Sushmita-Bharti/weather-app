@@ -16,16 +16,22 @@ This is a simple weather app built using React. It allows users to check the cur
    git clone https://github.com/Sushmita-Bharti/weather-app.git
     ```
 2. **Navigate to the project directory**
+   ```bash
    cd weather-app
-3. **Install dependencies**
+   ```
+4. **Install dependencies**
+   ```bash
    npm install
+   ```
    
  ## Usage
   Obtain API KeySign up on weatherapi.com to get your API key.
   Set up your key inside utils file which is under src/assets/resources.
 
 ## Run the application
+  ```bash
   npm start
+  ```
   View the applicationOpen your browser and navigate to localhost.
 
 ## Contributing
