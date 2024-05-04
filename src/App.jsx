@@ -3,6 +3,7 @@ import { FaRegMoon } from "react-icons/fa";
 import "./App.css";
 import FirstPart from "./component/FirstPart";
 import SecondPart from "./component/SecondPart";
+import { key } from "./assets/resources/utils";
 
 function App() {
   const [city, setCity] = useState("New Delhi");
@@ -14,7 +15,7 @@ function App() {
   const handleClick = (event) => {
     setIsActive((current) => !current);
   };
-  const apiKey = `https://api.weatherapi.com/v1/current.json?key=ccb3dba764fd411498c124954240105&q=${city}&aqi=no&units=metric`;
+  const apiKey = `https://api.weatherapi.com/v1/current.json?key=${key}&q=${city}&aqi=no&units=metric`;
 
   useEffect(() => {
     fetch(apiKey)
